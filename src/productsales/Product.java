@@ -33,8 +33,8 @@ public class Product implements IProduct {
                 indexOfMax = i;
             }
         }
-        return movies[indexOfMax];
-        return mostPopularProduct;
+        return [indexOfMax];
+        return ;
     }
 
 
