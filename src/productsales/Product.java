@@ -27,18 +27,13 @@ public class Product implements IProduct {
 
     @Override
     public String GetMostPopularProduct(int[][] productSales, String[] products){
-
-        String mostPopularProduct = "";
-
-        int max = productSales[0][0];
-        for (int i = 0; i < productSales.length; i++) {
-            for (int j = 0; j < productSales[i].length; j++) {
-                if (productSales[i][j] > max) {
-                    max = productSales[i][j];
-
-                }
+        int indexOfMax = 0;
+        for (int i = 0; i < totalProductSales.length; i++) {
+            if (productSales[i] > productSales[indexOfMax]) {
+                indexOfMax = i;
             }
         }
+        return movies[indexOfMax];
         return mostPopularProduct;
     }
 

@@ -6,6 +6,7 @@ import java.sql.SQLOutput;
 public class ProductApp {
 
     public static void main(String[] args) {
+
             String[] products = {"Cozy Nights Monarch mattress","Restonic Barbados mattress","Sealy Pucket mattress"};
             String months[] = {"month 1","month 2","month 3"};
             int[][] productSales = new int[3][3];
